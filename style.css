@@ -1,0 +1,999 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background-color: #1c1c1c;
+}
+
+#ContainerForChatApp {
+    background-color: #5a16b9;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#Sections_1 {
+    background-color: #60dcff;
+    width: 25%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+#Sections_1 .three_dot{
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+background-color: rgba(53, 53, 53, 0.272);
+z-index: 4;
+}
+button.sorgum{
+    position: absolute;
+margin: auto;
+transition: all 200ms ease-in-out;
+height: 40px;
+width:40px;
+top: 0;
+left: 0;
+z-index: 6;
+border: none;
+background-color: blueviolet;
+box-shadow: 2px -3px 2px white;
+font-weight: bolder;
+font-size: x-large;
+color: white;
+border-radius: 100px;
+rotate: 90deg;
+margin-top: 50px;
+}
+#Sections_1 .three_dot button.sorgum{
+    margin: 5px;
+    left: none;
+    color: white;
+    border-radius: 1px;
+    background-color: rgb(0, 0, 0);
+transition: all 200ms ease-in-out;
+}
+#Sections_1 .three_dot .maxwell{
+    position: fixed;
+padding: 1 5px;
+z-index: 5;
+animation: ski 200ms linear;
+background-color: blueviolet;
+height: 100%;
+width: 350px;
+left: 0;
+top: 0;
+bottom: 0;
+    }
+    @keyframes ski{
+        0%{
+transform: translate(-10rem,0);
+        }
+        100%{
+
+        }
+    }
+    #Sections_1 .three_dot .maxwell .maminDivh{
+        display: grid;
+        gap: 5px;
+    }
+    #Sections_1 .three_dot .maxwell .maminDivh .condiv{
+        width: 100%;
+        height: 100px;
+        box-shadow: -2px 2px 5px white;
+        border-radius: 5px;
+    }
+    #Sections_1 .three_dot .maxwell .maminDivh .condiv .p1display .p1min{
+        margin-left: 50px;
+      margin-top: 10px;
+      background-color: rgba(190, 105, 255, 0.724);
+      position: absolute;
+      width: 60%;
+      padding: 5px;
+      border-radius: 10px;
+      display: flex;
+      transition: all 200ms ease-in-out;
+    }
+    #Sections_1 .three_dot .maxwell .maminDivh .condiv .p1display .p1min:hover{
+        background-color: blueviolet;
+        box-shadow: 2px 2px 3px white;
+        border-bottom: 1px solid white;
+    }
+    #Sections_1 .three_dot .maxwell .maminDivh .condiv .p1display .p1min span.c{
+      font-weight: bolder;
+      font-size: x-large;
+      width: 50px;
+      padding: 0;
+      margin:0;
+      height: 50px;
+      border-radius: 100px;
+      background-color: #00c8ff;
+      text-align: center;
+    }
+    #Sections_1 .three_dot .maxwell .maminDivh .condiv .p1display .p1min span.c img{
+        height: 50px;
+        width: 50px;
+        overflow: hidden;
+        border-radius: 100px;
+    }
+    #Sections_1 .three_dot .maxwell .maminDivh .condiv .p1display .p1min .nt99{
+        font-weight: bolder;
+        font-family: Arial, sans-serif;
+        font-size: large;
+        margin: 10px;
+        margin-top: 20px;
+    }
+    #Sections_1 .three_dot .maxwell .maminDivh .otehrpart{
+        padding: 10px;
+        position: relative;
+        display: grid;
+        height: 100%;
+        width: 100%;
+    }
+    #Sections_1 .three_dot .maxwell .maminDivh .otehrpart .WFSD{
+        font-weight: bolder;
+        font-size: medium;
+        cursor: pointer;
+        height: 35px;
+        padding: relative;
+        border-bottom: 1px solid white;
+        width: 96%;
+        transition: all 200ms ease-in-out;
+    }
+    #Sections_1 .three_dot .maxwell .maminDivh .otehrpart .WFSD::before{
+        content: '>';
+        text-align: center;
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        text-align: center;
+        margin-left: 300px;
+        font-size: larger;
+        font-weight: bolder;
+        background-color: rgba(17, 17, 17, 0.42);
+        color: white;
+        border-radius: 100%;
+    }
+#Sections_1 .User {
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+}
+.Select_control{
+background: linear-gradient(50deg,rgba(21, 140, 180, 0.66),rgba(209, 22, 22, 0.696)) ;
+width: 100%;
+transition:all 500ms ease-in-out;
+text-align: center;
+height: min-content;
+border-bottom: 5px solid rgba(253, 0, 0, 0.596);
+padding: 10px;
+gap: 100px;
+animation: S_C 200ms linear;
+}
+@keyframes S_C{
+    0%{
+        transform: translate(0,-4rem);
+    }
+    50%{
+        transform: translate(0,2rem);
+    }
+    100%{
+        transform: none;
+    }
+}
+.Select_control .c01{
+    padding: 10px 12px ;
+    border-radius: 5px;
+    border: none;
+    margin-right: 20px;
+    font-weight: bolder;
+    font-size: large;
+    font-family: Arial, sans-serif;
+    background-color: green;
+}
+.Select_control .d01{
+    padding: 10px 12px ;
+    border-radius: 5px;
+    margin-left: 20px;
+    border: none;
+    font-weight: bolder;
+    font-size: large;
+    font-family: Arial, sans-serif;
+}
+#Sections_1 .User input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 2px solid #36d3ff;
+    border-radius: 5px 0 0 5px;
+    background-color: #fff;
+    color: #000;
+}
+
+#Sections_1 .User button {
+    padding: 10px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #36d3ff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#Sections_1 .User button.n99:hover {
+    background-color: #00c8ff;
+}
+
+#Sections_1 .ACCAll {
+    width: 100%;
+    height: auto;
+    overflow-x:hidden ;
+    padding: 20px;
+    background-color: #590ba6;
+    display: grid;
+    align-items: center;
+    color: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+#Sections_1 .oneAccount {
+    display: flex;
+    padding: 10px;
+    height: 50px;
+    border: 1px solid transparent;
+    border-top: 1px solid white;
+    transition: all 200ms ease;
+}
+#Sections_1 .oneAccount:hover {
+background-color: #00000075;
+box-shadow: 0 0 5px 0.1rem black;
+border-radius: 5px;
+/* transform: translate(0,-10px); */
+}
+#Sections_1 .oneAccount div{
+    margin-top: 20px;
+}
+.IFHE{
+   animation: sl 100ms ease-in-out;
+}
+@keyframes sl{
+    0%{
+        transform: translate(-4rem,0);
+    }
+}
+
+#Sections_1 .oneAccount span {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #000080;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    font-size: 24px;
+    background-attachment: local;
+    overflow: hidden;
+    background-size: cover;
+    justify-content: center;
+    font-size: 24px;
+}
+#Sections_1 .oneAccount input {
+height: 40px;
+margin-left: auto;
+border-radius: 100px;
+background-color: green;
+width: 40px;
+}
+#Sections_1 .oneAccount span img{
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-color: #000080;
+    align-items: center;
+    margin: auto;
+}
+#Section_Commitment {
+    background-color: #501a7f;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+@media (width<500px) {
+    #ContainerForChatApp{
+        display: none;
+    }
+}
+.firsts1{
+    display: inline;
+    height: 80%;
+}
+.firsts2{
+    top: 0;
+    height: 100px;
+    position: fixed;
+    width: 47%;
+    height: 70px;
+    margin-left: -9px;
+    background-color: #37c0f2;
+    /* box-shadow: 0 1px 10px  #00c8ff; */
+}
+.TopCorner{
+background-color: transparent;
+width: 100%;
+height: 100%;
+z-index: 1;
+display: flex;
+}
+.TCcontener{
+display: flex;
+}
+.TCButtonCont09{
+    display: none;
+}
+@keyframes stu{
+    0%{
+        text-align: left;
+        /* font-weight: bolder; */
+        transform: translate(0,-1rem);
+    }
+    50%{
+        opacity: 0;
+        text-align: center;
+        /* font-weight: 1000; */
+        transform: translate(0,0rem);
+
+    }
+    100%{
+        text-align: right;
+        /* font-size: larger; */
+        transform: translate(0,-1rem);
+
+    }
+}
+.TCcontener .TCButtonCont{
+    width: 60px;
+    height: 100%;
+    background-color: transparent;
+}
+.TCcontener .TCButtonCont .TCButton{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: rgb(24, 139, 211);
+    margin: 5px;
+    font-weight: 1000;
+    font-weight: bolder;
+    font-size: xx-large;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+}
+.TCcontener .TCButtonCont .TCButton:hover{
+    background-color: rgb(16, 148, 177);
+}
+.TCcontener .TcImgTextCont {
+    width: max-content;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    padding-right: 5px;
+}
+.TCcontener .TcImgTextCont .TCImgCont{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #2424bc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 6px;
+    font-size: 24px;
+    background-attachment: local;
+    overflow: hidden;
+    background-size: cover;
+    justify-content: center;
+    font-size: 24px;
+}
+.TCcontener .TcImgTextCont .TCImgCont img{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    box-shadow: 0 0 1px 0.1rem black;
+    border: 1px solid white;
+    border-radius: 100%;
+}
+.TCcontener .TcImgTextCont .TCTexCont {
+    min-width: 100px;
+    max-width: min-content;
+    padding: 5px;
+    font-weight: bolder;
+    font-size: large;
+    height: 25px;
+    border-radius: 5px;
+    background-color: #00c8ff;
+    margin-top: 20px;
+}
+.BLUR88{
+    position: relative;
+    overflow: hidden;
+}
+
+.BLUR88 .B88{
+    position: relative;
+    z-index: 1;
+}
+.MessDisplay {
+    /* flex-grow: 2; */
+    overflow-y: scroll;
+    padding: 10px;
+    height: 100%;
+    border: 2px solid #fff;
+    background-color: rgba(132, 32, 255, 0.767);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.main012{
+    min-width: 45%;
+    width: 50%;
+    max-width: 80%;
+    /* padding: 10px; */
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: inline-block;
+    gap: 0;
+    font-weight: normal;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    /* box-shadow: 0 0 2px 1px rgba(49, 49, 49, 0.863); */
+    min-height: 30px;
+    /* background-color: #47474781; */
+    border: 1px solid transparent;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    animation: ws 400ms linear;
+}
+.UserMessage {
+    /* width: 100%; */
+    /* max-width: 80%; */
+    padding: 10px;
+    font-weight: normal;
+    gap: 0;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 0 2px 1px rgba(49, 49, 49, 0.863);
+    min-height: 30px;
+    z-index: 1;
+    display: flex;
+    background-color: #47474781;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    animation: ws 400ms linear;
+}
+.ControlCeterFM{
+    display: none;
+    z-index: -1;
+}
+.main012:hover .UserMessage{
+    transition: all 500ms ease-in-out;
+    border-bottom-left-radius:0px ;
+    border-bottom-right-radius: 0px;
+    z-index: 1;
+}
+.main012:hover .ControlCeterFM{
+    transition: all 500ms ease-in-out;
+    animation: STuv 400ms linear;
+    /* animation: STuv 200ms linear(0 0%, 0 2.27%, 0.02 4.53%, 0.04 6.8%, 0.06 9.07%, 0.1 11.33%, 0.14 13.6%, 0.25 18.15%, 0.39 22.7%, 0.56 27.25%, 0.77 31.8%, 1 36.35%, 0.89 40.9%, 0.85 43.18%, 0.81 45.45%, 0.79 47.72%, 0.77 50%, 0.75 52.27%, 0.75 54.55%, 0.75 56.82%, 0.77 59.1%, 0.79 61.38%, 0.81 63.65%, 0.85 65.93%, 0.89 68.2%, 1 72.7%, 0.97 74.98%, 0.95 77.25%, 0.94 79.53%, 0.94 81.8%, 0.94 84.08%, 0.95 86.35%, 0.97 88.63%, 1 90.9%, 0.99 93.18%, 0.98 95.45%, 0.99 97.73%, 1 100%); */
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    margin: 0;
+    margin-top: -10px;
+    text-align: right;
+    padding-top: 5px;
+    height: 40px;
+    border-radius: 0;
+    z-index: -1;
+    background-color: rgb(0, 109, 115);
+    border:none;
+    border-bottom-left-radius:10px ;
+    border-bottom-right-radius: 10px;
+    color: white;
+}
+.ControlCeterFM .FM_DEL{
+    width: 50px;
+    height: 30px;
+    border-radius: 100px;
+    cursor: pointer;
+    border: none;
+    margin: 5px;
+    font-weight: bolder;
+    font-size: large;
+    background-color: rgb(68, 26, 26);
+    color: white;
+}
+.ControlCeterFM .FM_Edit{
+    width: 50px;
+    height: 30px;
+    border-radius: 100px;
+    cursor: pointer;
+    border: none;
+    margin: 5px;
+    font-weight: bolder;
+    font-size: large;
+    background-color: rgb(22, 72, 42);
+    color: white;
+
+}
+.ControlCeterFM button:hover{
+    animation: lusBAG 500ms linear;
+
+}
+@keyframes STuv{
+    0%{
+        opacity: 0;
+        transform: translate(0rem,-3rem);
+        height: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        height: 100%;
+        transform: translate(0rem,0);
+    }
+}
+@keyframes lusBAG{
+    0%{
+        transform: translate(0rem,-0.3rem);
+    }
+    100%{
+        transform: translate(0rem,0);
+    }
+}
+audio{
+    position: relative;
+    z-index: 0;
+}
+@keyframes ws {
+    0%{
+        opacity: 0.2;
+        transform: translate(0rem,40rem);
+    }
+    100%{
+        transform: translate(0rem,0);
+    }
+}
+#outputDiv {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #333;
+    font-family: Arial, sans-serif;
+    display: inline-block; /* Display the text inline */
+    white-space: pre-wrap; /* Preserve spaces and wrap text */
+    position: relative;
+}
+/* Cursor */
+.cursor {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: white;
+    transition: all 100ms ease-in-out;
+    box-shadow: -1px 0px 1px white;
+    margin-top: 2px;
+    margin-left: 2px;
+    /* animation: blink 0.7s infinite; */
+    vertical-align: bottom; /* Align cursor with text */
+}
+.cursor_t {
+    display: inline-block;
+    height: 1.2rem;
+    width: 0.6rem;
+    border-radius: 10px;
+    /* border-radius: 20px; */
+    background-color: rgb(255, 255, 255);
+    margin-top: 2px;
+    margin-left: -2px;
+    animation: blink 0.2s infinite;
+    vertical-align: bottom; /* Align cursor with text */
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+.RobotMessage {
+    min-width: 45%;
+    width: 50%;
+    max-width: 80%;
+    text-align: left;
+    padding: 10px;
+    margin: auto;
+    font-weight: normal;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 0 2px 1px rgba(69, 69, 69, 0.863);
+    min-height: 30px;
+    background-color: #51258e81;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    border-bottom-right-radius: 0;
+    align-self: flex-end;
+    margin-right: 10px;
+    animation: w 400ms linear;
+    margin-top: 10px;
+}
+@keyframes w {
+    0%{
+        opacity: 0.2;
+        transform: translate(0rem,10rem);
+    }
+    100%{
+        transform: translate(0rem,0);
+        /* transform: rotate(10deg); */
+    }
+}
+#UserAreaMessage {
+    display: flex;
+    align-items: center;
+    border-top: 2px solid #fff;
+    padding: 10px;
+    background-color: rgba(29, 240, 255, 0.886);
+    border-radius: 10px;
+}
+#UserAreaMessageControl{
+    display: grid;
+}
+#UserAreaMessageControl .Conts00{
+    border-radius: 10px;
+    display: grid;
+/* position: absolute; */
+/* top: 0; */
+margin: auto;
+padding: 10px;
+margin-top: -60px;
+border-left: 10px solid rgb(191, 219, 30) ;
+border-radius: 10px;
+height: 50px;
+position: relative;
+background-color: rgb(171, 61, 185);
+color: black;
+font-weight: bolder;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: larger;
+width: 95%;
+}
+#UserAreaMessageControl .ForWho{
+    color: black;
+text-decoration: underline;
+}
+#UserAreaMessageControl .nms{
+    font-weight: bold;
+    font-size: medium;
+    color: white;
+overflow-x: hidden;
+    padding: 5px;
+}
+
+#UserAreaMessageControl .BTNS{
+    /* position: absolute; */
+    margin-left: auto;
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 100px;
+    height: 35px;
+    font-weight: bolder;
+    font-size: medium;
+    transition: all 200ms ease-in-out;
+    width: 35px;
+    margin-top: -45px;
+}
+#UserAreaMessageControl .BTNS:hover{
+    border: none;
+    text-shadow: 2px 2px 2px black;
+    font-size: large;
+    transform: rotate(180deg);
+    background-color: rgba(247, 68, 68, 0.845);
+}
+button:disabled{
+    background-color: transparent;
+}
+
+#UserAreaMessage textarea {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    resize: none;
+} 
+
+#UserAreaMessage button {
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+#UserAreaMessage button:hover {
+    color: #000;
+}
+
+#Section_Setting {
+    background-color: #6b15fe;
+    width: 25%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#Section_Setting .Section_s_button {
+    padding: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#Section_Setting .Section_s_button button {
+    background: rgba(36, 36, 36, 0.534);
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#Section_Setting .Section_s_button button:hover {
+    background: rgba(36, 36, 36, 0.8);
+}
+
+#Section_Setting #Change {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bolder;
+    background-color: #00000032;
+    border: 1px solid transparent;
+    width: 90%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 1px 0.5rem 0 rgba(60, 60, 60, 0.708);
+}
+
+#Section_Setting #Change input {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    font-weight: bolder;
+    border: 1px solid transparent;
+    width: 100%;
+}
+
+#Section_Setting #Change span {
+    width: 50px;
+    overflow: hidden;
+    height: 50px;
+    border-radius: 100%;
+}
+.ContainerForChck{
+    margin: 5px;
+width: 100%;
+min-width: 100px ;
+border: none;
+background-color: #0000006b;
+padding: 10px;
+gap: 10px;
+display: grid;
+border-radius: 10px;
+box-shadow: 0 1px 0.5rem 0 rgba(31, 31, 31, 0.708);
+}
+#Tran{
+    font-weight: bolder;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 5px;
+width: 70%;
+text-align: center;
+min-width: 100px ;
+border: none;
+background-color: #0000006b;
+padding: 10px;
+gap: 10px;
+display: grid;
+border-radius: 10px;
+box-shadow: 0 1px 0.5rem 0 rgba(31, 31, 31, 0.708);
+}
+#Tran .form{
+min-width: 100px;
+max-width: 200px;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+text-align-last: center;
+}
+.Failed{
+   background-color: rgba(43, 110, 43, 0.078);  
+   padding:10px;                   
+   width: 200px;
+   text-align: center;
+   margin: auto;
+   border-radius: 15px;
+   height: max-content;
+}
+.Failed .Dis_IMo{
+    margin: auto;
+    width: min-content;
+    font-weight: bolder;
+    font-size: 100px;
+}
+.Failed .Dis_text{
+    font-weight: bolder;
+    font-family: Arial, sans-serif;
+    color: white;
+    font-size: large;
+}
+
+#Tran .su89 button{
+    color: white;
+    font-weight: bolder;
+    /* background-color: #212121d1; */
+    margin: 10px;
+    padding: 10px;
+    background: linear-gradient(2deg,rgb(12, 106, 107),transparent);
+    border-radius: 5px;
+    transition: all 500ms ease-in-out;
+    border: none;
+}
+#Tran button:hover{
+    background: linear-gradient(60deg,transparent,rgb(12, 106, 107));
+    border: none;
+}
+#Tran button:active{
+    background-color: rgb(12, 106, 107);
+}
+.ContainerForChck .ChckDiv{
+    padding: 5px;
+    display: flex;
+    background-color: #0000004a;
+    border-radius: 5px;
+    box-shadow:  0 1px 0.3rem 0 rgba(31, 31, 31, 0.708);
+    transition: all 200ms ease-in-out;
+}
+.ContainerForChck .ChckDiv:hover{
+transform: translate(0,-0.1rem);
+background-color: #9234e48e;
+}
+.ContainerForChck .ChckDiv span{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    /* box-shadow: 0 0 1px 0.1rem black; */
+    border: none;
+    border-radius: 100%;
+    text-align: center;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+.ContainerForChck .TextChck{
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.ContainerForChck .SencondChckButonDiv{
+    text-align: center;
+    /* display: flex; */
+    gap: 10px;
+}
+.ContainerForChck .SencondChckButonDiv button{
+    color: white;
+    font-weight: bolder;
+    background-color: #212121d1;
+    margin: 10px;
+    transition: all 200ms ease-in-out;
+}
+
+#Section_Setting #Change span img {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    box-shadow: 0 0 1px 0.1rem black;
+    border: 1px solid white;
+    border-radius: 100%;
+}
+
+#Section_Setting #Change input[type='file'] {
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    font-weight: bolder;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.628), transparent);
+    border: none;
+    margin-bottom: 10px;
+}
+
+#Section_Setting #Change button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-weight: bolder;
+    background-color: #000;
+    color: white;
+    transition: all 200ms ease-in-out;
+}
+
+#Section_Setting #Change button:hover {
+    background: linear-gradient(0deg, transparent, black);
+    border: none;
+}
+
+.MessDisplay::-webkit-scrollbar {
+    width: 6px;
+    background: transparent;
+}
+
+.MessDisplay::-webkit-scrollbar-thumb {
+    background-color: #36d3ff;
+    border-radius: 10px;
+}
+
+.MessDisplay::-webkit-scrollbar-track {
+    background-color: #36d3ff;
+    border-radius: 1px;
+}
+
+ .nu89{
+    animation: nuls 100ms linear infinite;
+    transition: all 200ms ease-in-out;
+    position: relative;
+    background:linear-gradient(90deg, );
+}
+.MNEDITED{
+    color: rgba(14, 14, 14, 0.854);
+    font-weight: bolder;
+    font-size: smaller;
+    margin: auto;
+    margin-bottom: -5px;
+    font-family: Arial, sans-serif;
+    margin-right: 0;
+}
+@keyframes nuls {
+    0%{
+        transform:translate(0,-0.5rem);
+    }
+    50%{
+        transform:translate(0,0.5rem);
+    }
+    100%{
+        transform:translate(0,-0.5rem);
+
+    }
+}
