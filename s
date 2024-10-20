@@ -276,7 +276,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const an9s = document.createElement("audio");
     an9s.id = 'suv';
     an89.spellcheck = true;
-    an9s.src = '/chatGpt/gs.ogg'
+    an9s.src = 'gs.ogg'
     addHtml(container, an9s)
     an89.src = '/chatGpt/pleasant_keyboard_click_sound_50ms.wav'
     addHtml(container, section1);
